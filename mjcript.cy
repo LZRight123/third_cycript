@@ -1,15 +1,15 @@
-(function(exports) {
+(function(mj) {
 	var invalidParamStr = 'Invalid parameter';
 	var missingParamStr = 'Missing parameter';
 
 	// app id
-	MJAppId = [NSBundle mainBundle].bundleIdentifier;
+	mj.MJAppId = [NSBundle mainBundle].bundleIdentifier;
 
 	// mainBundlePath
-	MJAppPath = [NSBundle mainBundle].bundlePath;
+	mj.MJAppPath = [NSBundle mainBundle].bundlePath;
 
 	// document path
-	MJDocPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+	mj.MJDocPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
 
 	// caches path
 	MJCachesPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0]; 
