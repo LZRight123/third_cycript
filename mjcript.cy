@@ -3,13 +3,13 @@
 	var missingParamStr = 'Missing parameter';
 
 	// app id
-	mj.MJAppId = [NSBundle mainBundle].bundleIdentifier;
+	MJAppId = [NSBundle mainBundle].bundleIdentifier;
 
 	// mainBundlePath
-	mj.MJAppPath = [NSBundle mainBundle].bundlePath;
+	MJAppPath = [NSBundle mainBundle].bundlePath;
 
 	// document path
-	mj.MJDocPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+	MJDocPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
 
 	// caches path
 	MJCachesPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0]; 
